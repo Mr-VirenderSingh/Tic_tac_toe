@@ -67,4 +67,5 @@ const game = (() => {
     btns.forEach((btn) => (btn.innerHTML = ""));
     btns.forEach((btn) => (btn.disabled = false));
   }
-})();
+
+})();  

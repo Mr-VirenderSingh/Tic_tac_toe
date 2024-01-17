@@ -12,12 +12,13 @@ body {
   position: relative;
 }
 
+
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: calc(100vh - 25px);
 }
 
 .container {
@@ -82,4 +83,26 @@ body {
 
 .hide {
  visibility: hidden;
+}
+
+.createrLabel{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 5px; */
+  height: 25px;
+}
+
+.copyRight{
+  color: whitesmoke;
+  font-size: 1.1rem;
+}
+
+.imgDiv{
+  margin-left: 10px;
+}
+.gitHublogo{
+  height: 18px;
+
 }
