@@ -43,7 +43,18 @@ const game = (() => {
           btns.forEach((btn) => (btn.disabled = true));
           winnerpage.style.visibility = "visible";
           message.innerText = `"${val1}" Won The Game`;
+          return;
         }
+      }
+      let filled = true;
+      btns.forEach((btn) => {
+        if (btn.innerHTML === "") {
+          filled = false;
+        }
+      });
+      if (filled) {
+        message.innerText = "It's a Draw";
+        winnerpage.style.visibility = "visible";
       }
     }
   }
@@ -53,7 +64,6 @@ const game = (() => {
 
   function newGame() {
     winnerpage.style.visibility = "hidden";
-    console.log("button clicked");
     btns.forEach((btn) => (btn.innerHTML = ""));
     btns.forEach((btn) => (btn.disabled = false));
   }
